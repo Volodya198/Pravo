@@ -8,6 +8,15 @@
   <link rel="icon" type="image/jpg" href="img/Icon/Best.jpg">
   <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Pacifico&family=Rubik+Bubbles&display=swap" rel="stylesheet">
 
   <script src="./libs/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.0/dist/ScrollToPlugin.min.js" defer></script>
@@ -20,13 +29,16 @@
 </head>
 <body>
   
-  <div class="swiper">
+  <div class="smoother">
 		<div class="content">
 
         <div class="intro-slide">
           <div class="container">
-            <button class="intro-title">Welcome Maksim</button>
-            <p>Некоторые кадры, от которых ты офигеешь</p>
+            <button class="intro-title"><span class="main-shimmer" 
+              style="font-size: 70px;">Маршал Советского Союза</span><br>
+              <span class="shimmer", style="font-family: 'Rubik Bubbles', cursive;">Александр Михайлович Василевский</span></button>
+            <q>Мы шли вперёд не ради славы, а ради Родины</q>
+            <p style="font-family: 'Pacifico', cursive;">Хоменко Владимир<br>Кормаков Максим</p>
           </div>
         </div>
 
@@ -35,7 +47,13 @@
           <img data-speed=".6" class="hero" src="img/hero.png" alt="Alt" >
           <div class="container">
             <div data-speed=".75" class="main-header">
-              <h1 class="main-title">Балдеж Man</h1>
+              <h1>Александр Василевский — один из самых выдающихся полководцев Великой Отечественной войны.</h1>
+              <ul>
+                <li>Почему он?</li>
+                <li>Организатор крупнейших наступательных операций.</li>
+                <li>Человек редкой скромности и чести.</li>
+                <li>Его вклад в Победу часто недооценён в массовом восприятии, но именно он был «мозгом Ставки».</li>
+              </ul>
             </div>
           </div>
         </header>
@@ -46,28 +64,51 @@
     
               <div data-speed=".9" class="gallery__left">
       
-                <img class="gallery__item" src="img/work/1.jpg" alt="Alt">
-                <img class="gallery__item" src="img/work/2.jpg" alt="Alt">
+                <img class="gallery__item" src="./img/pictures/picture_1.png" alt="Alt">
+
+                <div class="text-block gallery__item">
+                  <h2 class="text-block__h">Сталинградская битва</h2>
+                  <p class="text-block__p">Oрганизовал окружение и разгром немецкой 6-й армии, что стало переломным моментом войны.</p>
+                </div>
+
+                <img class="gallery__item" src="img/pictures/picture_3.png" alt="Alt">
       
                 <div class="text-block gallery__item">
-                  <h2 class="text-block__h">Lorem ipsum dolor sit amet consectetur.</h2>
-                  <p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laboriosam delectus nesciunt voluptatem saepe?</p>
+                  <h2 class="text-block__h">Белорусская операция «Багратион» (1944)</h2>
+                  <p class="text-block__p">Разработал и руководил операцией, которая уничтожила группу армий «Центр» и освободила Белоруссию.</p>
                 </div>
       
-                <img class="gallery__item" src="img/work/6.jpg" alt="Alt">
+                <img class="gallery__item" src="img/pictures/picture_5.png" alt="Alt">
+
+                <div class="text-block gallery__item main-elem-all">
+                  <h2 class="text-block__h">Маршал Советского Союза (1943)</h2>
+                  <p class="text-block__p">Высшее воинское звание, подтверждающее его роль главного стратега страны и выдающегося военного лидера.</p>
+                </div>
       
               </div>
 
-              <div data-speed="1.1" class="gallery__right">
+              <div data-speed=".9" class="gallery__right">
       
                 <div class="text-block gallery__item">
-                  <h2 class="text-block__h">Lorem ipsum dolor sit amet consectetur.</h2>
-                  <p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laboriosam delectus nesciunt voluptatem saepe?</p>
+                  <h2 class="text-block__h">Начальник Генерального штаба (1942–1945)</h2>
+                  <p class="text-block__p">Руководил всей стратегией Красной армии, планировал ключевые операции на фронтах Великой Отечественной войны.</p>
                 </div>
       
-                <img class="gallery__item" src="img/work/4.jpg" alt="Alt">
-                <img class="gallery__item" src="img/work/5.jpg" alt="Alt">
-                <img class="gallery__item" src="img/work/3.jpg" alt="Alt">
+                <img class="gallery__item" src="img/pictures/picture_2.png" alt="Alt">
+
+                <div class="text-block gallery__item">
+                  <h2 class="text-block__h">Курская битва</h2>
+                  <p class="text-block__p">Обеспечил подготовку обороны и успешное контрнаступление, остановив немецкое наступление на Востоке.</p>
+                </div>
+
+                <img class="gallery__item" src="img/pictures/picture_4.png" alt="Alt">
+
+                <div class="text-block gallery__item">
+                  <h2 class="text-block__h">Маньчжурская операция (1945)</h2>
+                  <p class="text-block__p">Провел молниеносное наступление против Квантунской армии Японии, ускорив конец войны с Японией.</p>
+                </div>
+
+                <img class="gallery__item" src="img/pictures/picture_6.png" alt="Alt">
       
               </div>
 
@@ -75,7 +116,99 @@
           </div>
         </div>
 
-		</div>
+        <div class="additional-sections">
+          <div class="container">
+            <h1 style="font-family: 'Pacifico', cursive">
+              <span class="letter">А</span>
+              <span class="letter">л</span>
+              <span class="letter">е</span>
+              <span class="letter">к</span>
+              <span class="letter">с</span>
+              <span class="letter">а</span>
+              <span class="letter">н</span>
+              <span class="letter">д</span>
+              <span class="letter">р</span>
+              <span class="letter">&nbsp;</span>
+              <span class="letter">В</span>
+              <span class="letter">а</span>
+              <span class="letter">с</span>
+              <span class="letter">и</span>
+              <span class="letter">л</span>
+              <span class="letter">е</span>
+              <span class="letter">в</span>
+              <span class="letter">с</span>
+              <span class="letter">к</span>
+              <span class="letter">и</span>
+              <span class="letter">й</span>
+              <span class="letter">&nbsp;</span>
+              <span class="letter">—</span>
+              <span class="letter">&nbsp;</span>
+              <span class="letter">п</span>
+              <span class="letter">р</span>
+              <span class="letter">и</span>
+              <span class="letter">м</span>
+              <span class="letter">е</span>
+              <span class="letter">р</span>
+              <span class="letter">&nbsp;</span>
+              <span class="letter">д</span>
+              <span class="letter">л</span>
+              <span class="letter">я</span>
+              <span class="letter">&nbsp;</span>
+              <span class="letter">п</span>
+              <span class="letter">о</span>
+              <span class="letter">д</span>
+              <span class="letter">р</span>
+              <span class="letter">а</span>
+              <span class="letter">с</span>
+              <span class="letter">т</span>
+              <span class="letter">а</span>
+              <span class="letter">ю</span>
+              <span class="letter">щ</span>
+              <span class="letter">е</span>
+              <span class="letter">г</span>
+              <span class="letter">о</span>
+              <span class="letter">&nbsp;</span>
+              <span class="letter">п</span>
+              <span class="letter">о</span>
+              <span class="letter">к</span>
+              <span class="letter">о</span>
+              <span class="letter">л</span>
+              <span class="letter">е</span>
+              <span class="letter">н</span>
+              <span class="letter">и</span>
+              <span class="letter">я</span>
+            </h1>
+            <i><p class="text-container" id="p-elem-one" style="font-family: 'Hachi Maru Pop', serif">Сочетал талант стратега и честность человека</p>
+            <p class="text-container" id="p-elem-two" style="font-family: 'Hachi Maru Pop', serif">Всегда подчеркивал роль солдата, а не только командования</p>
+            <p class="text-container" id="p-elem-three" style="font-family: 'Hachi Maru Pop', serif">Оставался скромным, несмотря на высшие награды</p>
+            <p class="text-container" id="p-elem-four" style="font-family: 'Hachi Maru Pop', serif">Доказал, что интеллект и дисциплина — не меньшее оружие, чем танки и артиллерия.</p></i>
+          </div>
+        </div>
+
+        <div class="next-section">
+          <div class="container">
+            <div class="last-container" style="font-family: 'Rubik Bubbles';">
+              <div class="last-item">
+                <img src="./img/Icon/last.png" alt="">
+                <p class="shimmer">Южный аэропорт Иваново — один из важных транспортных узлов региона, обеспечивающий как пассажирские, так и грузовые перевозки.</p>
+              </div>
+              <div class="last-item">
+                <img src="./img/Icon/last.png" alt="">
+                <p class="shimmer">Он носит имя Александра Василевского, выдающегося советского военачальника и маршала.</p>
+              </div>
+              <div class="last-item">
+                <img src="./img/Icon/last.png" alt="">
+                <p class="shimmer">Аэропорт активно развивается, предлагая современные сервисы и удобное сообщение с крупными городами России.</p>
+              </div>
+              <div class="last-item">
+                <img src="./img/Icon/last.png" alt="">
+                <p class="shimmer">Его название подчёркивает историческую и культурную значимость личности Василевского для страны.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
 	</div>
 
 </body>
